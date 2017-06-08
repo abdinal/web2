@@ -1,6 +1,7 @@
 <div class="row">
 
             <!-- Blog Entries Column -->
+
             <div class="col-md-8">
             <?php foreach ($isi_berita as $ib) { ?>
 
@@ -9,15 +10,12 @@
                     <a href="#"><?php echo $ib['judul'] ?></a>
                 </h2>
                 <p class="lead">
-                    by <a href="index.php">Start Bootstrap</a>
+                    by <a href="index.php"><?php echo $ib ['penulis'] ?></a>
                 </p>
-                <p><i class="fa fa-clock-o"></i> <?php echo $ib ['tanggal'] ?></p>
+                <p><i class="fa fa-clock-o"></i> </p>
                 <hr>
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
-                </a>
                 <hr>
-                <p><?php echo $ib['isi'] ?></p>
+                <p><?php echo $ib['id_buku'] ?></p>
                 <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
 
                 <hr>
